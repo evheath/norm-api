@@ -10,7 +10,15 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/request": "^2.48.2",
+    "@types/suncalc": "^1.8.0",
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^1.19.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "suncalc": "^1.8.0"
+  },
   "devDependencies": {
     "@types/node": "^12.7.3",
     "eslint": "^6.3.0",
