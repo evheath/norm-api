@@ -2,18 +2,26 @@
   "name": "norm-api",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "listen": "nodemon main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "start": "npm run serve",
+    "serve": "node dist/main.js",
+    "watch-node": "nodemon dist/main.js",
+    "watch-ts": "tsc -w"
+  },
+  "engines": {
+    "node": "8.11.4"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/express": "^4.17.1",
     "@types/request": "^2.48.2",
     "@types/suncalc": "^1.8.0",
     "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
     "puppeteer": "^1.19.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
