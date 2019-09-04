@@ -2,11 +2,17 @@
   "name": "norm-api",
   "version": "1.0.0",
   "description": "",
-  "main": "test.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "listen": "nodemon main.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "start": "npm run serve",
+    "serve": "node dist/main.js",
+    "watch-node": "nodemon dist/main.js",
+    "watch-ts": "tsc -w"
+  },
+  "engines": {
+    "node": "8.11.4"
   },
   "author": "",
   "license": "ISC",
