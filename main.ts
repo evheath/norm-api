@@ -3,8 +3,10 @@ const express = require('express');
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-const bozemanLat = 45.6841
-const bozemanLong = -111.052
+// const bozemanLat = 45.6841 // original lat
+// const bozemanLong = -111.052 // original long
+const bozemanLat = 45.79516 // norm's requested lat
+const bozemanLong = -111.05729 // norm's requested long
 
 app.get('/', (req, res) => {
 
