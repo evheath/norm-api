@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
   res.json({
     azimuth: bozemanAzimuthInDegrees,
     altitude: bozemanAltitudeInDegrees,
+    version: 1.1
   })
 });
 
